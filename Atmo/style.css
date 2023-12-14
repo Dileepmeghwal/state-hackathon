@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: a;
+    src: url(NewYork\ PERSONAL\ USE.otf);
+}
+
+@font-face {
+    font-family: b;
+    src: url(times\ new\ roman\ bold.ttf);
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+    background-color: #3a3a3a;
+
+}
+
+
+
+.nav {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin: 10px 0;
+    border-bottom: 0.5px solid #dddddd31;
+}
+
+.nav h4 {
+    font-family: a;
+    color: #fff;
+    font-size: 2vw;
+}
+.menubar{
+    display: none;
+}
+.nav button {
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    min-width: 130px;
+    border: 0;
+    font-family: a;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+#mainPage {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    font-family: a;
+    background-color: #3a3a3a;
+}
+
+#mainPage canvas {
+    max-width: 100vw;
+    max-height: 100vh;
+    position: relative;
+}
+
+#mainPage>h3 {
+    color: #fff;
+}
+.flex-rl{
+    display: grid;
+    grid-template-columns: 25% 25%;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 300px;
+    color: #fff;
+    padding: 0 0px 10px 40px;
+}
+
+#loop {
+    display: flex;
+    width: 100%;
+    transform: translate(-50% 0);
+    font-size: 40px;
+    white-space: nowrap;
+    font-family: gilroy;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    /* top: 50%; */
+
+}
+
+#loop>h1 {
+    font-weight: 400;
+    animation-name: anim;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#loop>h1>span {
+    -webkit-text-stroke: 1.2px #000;
+    color: transparent;
+    font-weight: 500;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+#pageOne {
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+.pageOne_text {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 35vw;
+}
+
+#pageOne h1 {
+    font-size: 3vw;
+    font-family: a;
+}
+
+#pageOne h3 {
+    font-size: 1.3vw;
+    font-family: b;
+    font-weight: 100;
+}
+
+#pageOne p {
+    font-size: 1vw;
+    font-family: 0.8vw;
+    font-family: a;
+    line-height: 30px;
+}
+
+#pageTwo {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.pageTwo_text {
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    width: 35vw;
+    color: #fff;
+}
+
+.pageTwo_text h1 {
+    font-size: 3vw;
+    font-family: a;
+}
+
+.pageTwo_text h3 {
+    font-size: 1.3vw;
+    font-family: b;
+    font-weight: 100;
+}
+
+.pageTwo_text p {
+    font-size: 1vw;
+    font-family: 0.8vw;
+    font-family: a;
+    line-height: 30px;
+}
+
+#pageThree {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.pageThree_text {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 35vw;
+    color: #fff;
+}
+
+.pageThree_text h1 {
+    font-size: 3vw;
+    font-family: a;
+
+}
+
+.pageThree_text h3 {
+    font-size: 1.3vw;
+    font-family: b;
+    font-weight: 100;
+}
+
+.pageThree_text p {
+    font-size: 1vw;
+    font-family: 0.8vw;
+    font-family: a;
+    line-height: 30px;
+}
+
+#page1 {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(15deg, #011abe, #0820c3, #a4adec, #011edd);
+    background-size: 500% 550%;
+    animation: gradient 5s ease infinite;
+    height: 100vh;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.center-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+
+}
+
+.center-wraper #atmos {
+    color: #fff;
+    font-size: 12vw;
+    font-family: a;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+
+}
+
+#atmos span {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    letter-spacing: -60px;
+    gap: 0;
+}
+
+.center-wraper button {
+    border: 0;
+    width: 11vw;
+    height: 60px;
+    font-family: a;
+    font-size: 22px;
+    border-radius: 50px;
+    display: inline-block;
+    color: #0820c3;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 800;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5 ease;
+
+}
+
+
+.center-wraper button:hover {
+    background-color: #011abe;
+    color: #fff !important;
+
+
+
+}
+
+.text-rotate {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+    right: -80px;
+    top: 15px;
+
+}
+
+
+svg {
+    overflow: visible;
+    fill: #fff;
+    text-transform: uppercase;
+
+    animation-name: rotate;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    letter-spacing: 2px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+path {
+    opacity: 0;
+    transition: all linear 0.2s;
+
+}
+
+#text-rounded {
+    color: #fff !important;
+
+}
+
+
+
+
+#page3 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(15deg, #011abe, #0820c3, #a4adec, #011edd);
+    /* background:  url(https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page3 canvas {
+    width: 100vw;
+    height: 100vh;
+}
+
+.page3-text h1 {
+    font-size: 10vw;
+    color: #fff;
+    font-family: a;
+}
+
+#pagefour {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.pagefour_text {
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    width: 35vw;
+    color: #fff;
+}
+
+.pagefour_text h1 {
+    font-size: 3vw;
+    font-family: a;
+
+}
+
+.pagefour_text h3 {
+    font-size: 1.3vw;
+    font-family: b;
+    font-weight: 100;
+}
+
+.pagefour_text p {
+    font-size: 1vw;
+    font-family: 0.8vw;
+    font-family: a;
+    line-height: 30px;
+}
+
